@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana';
+    background-color: rgb(240, 222, 194);
+}
+
+header {
+    /* border: 2px solid black; */
+    background-color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+nav > li {
+    list-style: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+nav > li > a {
+    text-decoration: none;
+    color:black;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+.te_dhenat {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.personi {
+    display: flex;
+}
+
+.personi > img {
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.data {
+    display: flex;
+    gap: 5px;
+}
+
+.data > img {
+    padding-top: 8px;
+    width: 35px;
+    height: 35px;
+}
+
+main {
+    /* border: 2px solid black; */
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.teksti1 {
+    text-align: justify;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.linqet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.teksti2 {
+    text-align: justify;
+    width: 50%;
+}
+
+.teksti3 {
+    text-align: justify;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rrjetet_sociale {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rrjetet_sociale > a > img {
+    width: 25px;
+    height: auto;
+}
+
+.instagram {
+    margin-top: 2px;
+}
+
+.tiktok {
+    margin-top: 3px;
+}
