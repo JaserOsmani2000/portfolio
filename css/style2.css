@@ -6,7 +6,7 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     height: 100vh;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Arial';
 }
 
 .boxi_madh {
@@ -126,6 +126,13 @@ main {
     width: 50%;
 }
 
+.cel_koka > .emri_profesioni {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .boxi_vertikal h2 {
     margin: 0;
     margin-top: 20px;
@@ -192,7 +199,6 @@ main {
 
 .contact > .email {
     width: 80%;
-    /* background-color: red; */
     border-bottom: 1px solid #797A7C;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -202,7 +208,6 @@ main {
     gap: 2px;
 }
 .email > .boxi1 {
-    /* border: 2px solid black; */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -269,7 +274,6 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     width: 90%;
-    /* background-color:bisque; */
 }
 
 .container_mes > .header_dhe_viza {
@@ -839,3 +843,284 @@ footer {
     align-items: center;
     font-size: 20px;
 }
+
+.kutiza_menuse {
+    display: none;
+}
+
+.cel_koka {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cel_koka > .jaserosmani {
+    width: 80%;
+}
+
+@media screen and (max-width: 480px) { /* Stilimi për ekranet më të vogla se 480px */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cel_koka {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; 
+        gap: 20px;
+        height: fit-content;
+        background-color: #F2F5F9;
+    }
+
+    .cel_koka > .kutiza_menuse {
+        display: flex;
+        width: 20%;
+        margin: 0;
+        padding: 0;
+        order: 0;
+        border-radius: 0px;
+    }
+    
+    .emri_profesioni {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .cel_koka > .jaserosmani {
+        order: 2;
+        width: 20%;
+        margin: 0;
+    }
+
+    .boxi_vertikal {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 0px;
+        width: 100%;
+        height: 110px;
+        flex-wrap: wrap;
+    }
+    .emri_profesioni h2 {
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .boxi_vertikal > .emri_profesioni {
+        order: 1;
+    }
+
+
+    .boxi_vertikal > .contact {
+        order: 3;
+        border: none;
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: row;
+        height: 45px;
+        background-color: white;
+        border-radius: 10px;
+        justify-content: space-evenly;
+    }
+
+    .contact > .phone {
+        border-bottom: none;
+        display: flex;
+        width: fit-content; 
+        gap: 5px;
+    }
+
+    .contact > .phone > .box1 {
+        display: inline;
+    }
+
+    .phone > .boxi2 {
+        display: none;
+    }
+
+    .phone > .boxi3 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-top: 5px;
+        width: fit-content;
+    }
+
+    .contact > .email {
+        width: fit-content;
+        border-bottom: none;
+        display: flex;
+        gap: 5px;
+    }
+
+    .email > .boxi2 {
+        display: none;
+    }
+
+    .email > .boxi3 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-top: 5px;
+    }
+
+    .contact > .location {
+        display: none;
+    }
+
+    .contact > .my_cv {
+        width: fit-content;
+        padding: 1px 10px;
+        border-radius: 20px;
+        height: 35px;margin-top: 0px;
+    }
+
+    .my_cv > img {
+        width: 20px;
+    }
+
+    .teksti_download {
+        display: none;
+    }
+
+    .boxi_vertikal > .rrjetet_sociale {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header {
+        display: inline;
+    }
+
+    body {
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    .boxi_madh {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 60px;
+    }
+
+    .header_dhe_viza > h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .header_dhe_viza > .viza {
+        width: 150px;
+        margin-top: -5px;
+    }
+
+    .introduction {
+        font-size: 12px;
+    }
+
+    .container_mes > h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container_mes {
+        width: 90%;;
+    }
+
+    .container_mes > .about_me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .about_me > .web_development {
+        padding-bottom: 5px;
+    }
+
+    /* .boxi_vertikal .rrjetet_sociale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 60px;
+    }
+    
+    .boxi_vertikal > .rrjetet_sociale > a > img {
+        width: 22px;
+        padding: 15px;
+        border: 1px solid #E1E8EF;
+        background-color: #F2F7FC;
+    } */
+
+    .boxi_vertikal .rrjetet_sociale {
+        display: flex;
+        position: absolute;
+        top: 1040px;
+        right: 58px;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+
+    }
+
+    footer {
+        position: absolute;
+        top: 980px;
+        width: 95%;
+        height: 100px;
+        font-size: 12px;
+        align-items: flex-end;
+    }
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) { /* Stilimi për telefonat më të mëdhenj */
+    
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) { /* Stilimi për laptopë dhe desktopë të vegjël */
+    
+}
+
+
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) { /* Stilimi për monitorët e mëdhenj */
+    
+}
+
+
+
+@media screen and (min-width: 2561px) { /* Stilimi për ekranët ultra të mëdhenj */
+    
+  }
